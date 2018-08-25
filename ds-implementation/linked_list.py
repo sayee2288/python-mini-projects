@@ -14,6 +14,7 @@ class node:
     def set_next(self, next=None):
         self.next = next
 
+
 class linked_list:
 
     def __init__(self, head=None):
@@ -37,10 +38,12 @@ class linked_list:
             while True:
                 if ptr1.data == data:
                     ptr2.next = ptr1.next
-                    print ('Deleted the element from head of the linked list: {}' .format(ptr1.data))
+                    print ('Deleted the element from \
+                        head of the linked list: {}' .format(ptr1.data))
                     break
                 elif ptr1.next is None:
-                    print('Traversed the linked list but couldn\'t find {}' .format(data))
+                    print('Traversed the linked \
+                        list but couldn\'t find {}' .format(data))
                     break
                 else:
                     ptr2 = ptr1
@@ -56,10 +59,12 @@ class linked_list:
                 ptr = ptr.next
                 continue
 
+
 my_ll = linked_list()
 
 while True:
-    x = int(input('\n Please select an operation: 1. insert 2. delete 3. Print: 4. exit\n'))
+    x = int(input('\n Please select an \
+        operation: 1. insert 2. delete 3. Print: 4. exit\n'))
     if x == 1:
         data = input('Please enter the data to place in the list: ')
         my_node = node(data)
